@@ -4,6 +4,13 @@
 ```
 docker images
 docker rmi <container> -f
+docker logs <name> -f
+docker exec -it <name> bash
+curl http://localhost:9200
+curl -X PUT http://localhost:9200/newindex
+curl -X GET http://localhost:9200/newindex
+curl -X GET http://localhost:9200/newindex?pretty
+
 ```
 
 * check docker container running , all
